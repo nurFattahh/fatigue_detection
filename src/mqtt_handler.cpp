@@ -128,3 +128,19 @@ String formatTimestamp(unsigned long ms) {
   return String(buffer);
 }
 
+void sendStatusToBroker(String id, String status) {
+  if (!client.connected()) {
+    reconnectMQTT();
+  }
+  client.loop();
+  
+  String payload = "{";
+  payload += "\"device_status\": \"" + status + "\"";
+  payload += "}";
+
+  String topic = "esp32/" + id + "/status";
+  client.publish(topic.c_str(), payload.c_str(), true);  // retain=true agar status disimpan oleh broker
+  Serial.println("Status MQTT terkirim: " + payload);
+}
+
+

@@ -17,5 +17,6 @@ void sendFeaturetoBroker(String id, float bpm, float suhuObjek, float suhuLingku
 void sendSampletoBroker(String id, int rawECG);
 String formatTimestamp(unsigned long ms);
 void batchSendSampletoBroker(String id);
+void sendStatusToBroker(String id, String status);
 
 #endif  // MQTT_HANDLER_H
