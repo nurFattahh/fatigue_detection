@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include <esp_task_wdt.h>
 
 #include "buzzer_notification.h"
 
@@ -26,6 +27,7 @@ void buzzerInference(bool status) {
         digitalWrite(BUZZER_PIN, LOW); 
         Serial.println("normal");
     } else {
+        esp_task_wdt_reset();
         digitalWrite(BUZZER_PIN, HIGH); 
         delay(10000); 
         digitalWrite(BUZZER_PIN, LOW); 
