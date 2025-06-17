@@ -1,5 +1,12 @@
 # Capstone Project
 #### Kelas: **K2A** — Kelompok: **1**
+Anggota Kelompok:
+- Muhammad Aqil Fauzi &nbsp;&nbsp;&nbsp; (225150300111005)
+- Muhammad Nur Fattah &nbsp; (225150300111015)
+- Arvin Mulia Fernanda &nbsp;&nbsp;&nbsp;&nbsp; (225150300111018)
+- Ariandamar Chairul P. &nbsp;&nbsp;&nbsp;&nbsp; (225150300111035)
+- Fatyatulhaqq Diando N. &nbsp; (225150300111039)
+
 #### Repository komputer edge gateway
 [https://github.com/arvin-mf/capstone](https://github.com/arvin-mf/capstone)
 # *Sistem Pemantauan Kelelahan Berbasis HRV Dan Suhu Tubuh dengan Implementasi pada Wearable Device*
@@ -11,16 +18,16 @@ Sistem ini melakukan deteksi kelelahan berdasarkan sinyal ECG dari tubuh serta t
 ## Alat yang Digunakan
 1. Mikrokontroler, Sumber Daya, Sensor, dan Aktuator
 - Mikrokontroler: ESP32
-<br>![Gambar ESP32]()<br>
+<br><img src="https://i.postimg.cc/CMrHcpH8/esp.png" alt="Gambar ESP32" width=200/><br>
 - Sensor ECG: AD8232
-<br>![Gambar AD8232](https://i.postimg.cc/fTgKBJgT/ad8232.jpg)<br>
+<br><img src="https://i.postimg.cc/fTgKBJgT/ad8232.jpg" alt="Gambar AD8232" width=200/><br>
 - Sensor Suhu: MLX90614
-<br>![Gambar MLX90614](https://i.postimg.cc/bJ8HsbdL/mlx90614.jpg)<br>
+<br><img src="https://i.postimg.cc/bJ8HsbdL/mlx90614.jpg" alt="Gambar MLX90614" width=200/><br>
 - Buzzer: 
-<br>![Gambar baterai](https://i.postimg.cc/0QwjRH9B/baterai.jpg)<br>
-<br>![Gambar modul charger](https://i.postimg.cc/tJbq0qSs/charger.jpg)<br>
+<br><img src="https://i.postimg.cc/0QwjRH9B/baterai.jpg)" alt="Gambar baterai" width=200/><br>
+<br><img src="https://i.postimg.cc/tJbq0qSs/charger.jpg)" alt="Gambar modul charger" width=200/><br>
 - Baterai dan Modul Chargger: 
-<br>![Gambar buzzer](https://i.postimg.cc/x8pKx45F/buzzer.jpg)<br>
+<br><img src="https://i.postimg.cc/x8pKx45F/buzzer.jpg)" alt="Gambar buzzer" width=200/><br>
 
 2. :orange:Grafana
 <br>Grafana dipasang pada komputer dashboard dan diakses melalui port `3000` (default) sebagai penampil visualisasi data-data yang tersimpan pada database.
@@ -49,8 +56,10 @@ Pada masing-masing perangkat pada subyek terdapat satu buah mikrokontroler ESP32
 Berikut adalah wiring diagram dan casing perangkat keras pada setiap perangkat pada subyek.
 ![Gambar wiring diagram](https://i.postimg.cc/nzk5znVj/Diagram-Wiring-Capstone.png)
 ![Gambar desain casing](https://i.postimg.cc/hGJZnV6Y/3-D-Design-Casing.png)
-![Gambar casing 1](https://i.postimg.cc/7hNm99J5/Salinan-Whats-App-Image-2025-05-18-at-09-29-50-547e332f.jpg)
-![Gambar casing 2](https://i.postimg.cc/WbCJKrmz/Salinan-Whats-App-Image-2025-05-18-at-09-29-53-e56d4ec0.jpg)
+<div>
+    <span><img src="https://i.postimg.cc/7hNm99J5/Salinan-Whats-App-Image-2025-05-18-at-09-29-50-547e332f.jpg" alt="Gambar casing 1" width=200/></span>
+    <span><img src="https://i.postimg.cc/WbCJKrmz/Salinan-Whats-App-Image-2025-05-18-at-09-29-53-e56d4ec0.jpg" alt="Gambar casing 2" width=200/></span>
+</div><br>
 
 Pada ESP32, terdapat bagian program yang melakukan inferensi status kelelahan dengan sejumlah parameter yang diproses dari masukan-masukan sensor. Bagian program tersebut merupakan implementasi dari bobot-bobot dan bias yang didapatkan dari algoritma SVM.<br>
 
@@ -107,3 +116,7 @@ Kode program dapat diakses pada [repositori ini](#repository-komputer-edge-gatew
 
 ### Dashboard Monitoring Kondisi Tubuh dan Lingkungan
 ![Gambar dashboard Grafana](https://i.postimg.cc/fW1MvjqK/Screenshot-405-1.png)
+
+## Demo
+Video demo produk dapat dilihat berikut ini.
+[![Gambar](https://i.postimg.cc/mk1RfGcD/Screenshot-2025-06-17-212054.png)](https://drive.google.com/file/d/15xLARlAiJnPl_LpX3M2isx0Cvv_3rWRF/view?usp=drive_link)
