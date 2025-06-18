@@ -84,7 +84,24 @@ Gambar berikut menunjukkan visualisasi scatter dari data yang telah dinormalisas
 #### Training model dan pengujian
 Training model dilakukan dengan menggunakan 80% dari jumlah baris data keseluruhan. 20% dari baris digunakan untuk pengujian.<br>
 Hasil pengujian adalah sebagai berikut.
-![Gambar hasil pengujian]()
+![confusion matrix](https://i.postimg.cc/jSzpCKqg/output.png)
+
+#### Classification Report
+- **Accuracy**: 0.98  
+- **Precision**:
+  - Kelas 0: 0.97  
+  - Kelas 1: 1.00  
+- **Recall**:
+  - Kelas 0: 1.00  
+  - Kelas 1: 0.89  
+- **F1-Score**:
+  - Kelas 0: 0.98  
+  - Kelas 1: 0.94  
+- **Macro Avg F1-Score**: 0.96  
+- **Weighted Avg F1-Score**: 0.98  
+
+Model menunjukkan performa yang sangat baik secara keseluruhan, dengan akurasi tinggi dan F1-score yang stabil. Recall pada kelas minoritas (kelas 1) sedikit lebih rendah, namun precision-nya tetap sempurna.
+![classification report](https://i.postimg.cc/CxTyFd0n/Screenshot-2025-06-18-180108.png)
 
 ## Edge Gateway
 ### Broker MQTT
